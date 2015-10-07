@@ -1,0 +1,81 @@
+<(SupplyDepot+ )(SpawningPool- )(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.526331	SupportTot = 11214	SupportInters = 11214	SupportDualTot = 10092	SupportDualInters = 10092
+<(Barracks+ )(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.523999	SupportTot = 11605	SupportInters = 11605	SupportDualTot = 10542	SupportDualInters = 10542
+<(SupplyDepot+ )(Barracks+ )(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.523971	SupportTot = 11596	SupportInters = 11596	SupportDualTot = 10535	SupportDualInters = 10535
+<(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.523902	SupportTot = 11617	SupportInters = 11617	SupportDualTot = 10557	SupportDualInters = 10557
+<(Barracks+ )(Hatchery- )(SupplyDepot+ )>	Balance = 0.523496	SupportTot = 11753	SupportInters = 11753	SupportDualTot = 10698	SupportDualInters = 10698
+<(SupplyDepot+ )(Hatchery- )(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.523406	SupportTot = 11181	SupportInters = 11181	SupportDualTot = 10181	SupportDualInters = 10181
+<(SupplyDepot+ )(Barracks+ )(Hatchery- )(SupplyDepot+ )>	Balance = 0.523338	SupportTot = 11739	SupportInters = 11739	SupportDualTot = 10692	SupportDualInters = 10692
+<(SupplyDepot+ )(Hatchery- )(SupplyDepot+ )>	Balance = 0.523138	SupportTot = 12130	SupportInters = 12130	SupportDualTot = 11057	SupportDualInters = 11057
+<(Barracks+ )>	Balance = 0.523067	SupportTot = 12438	SupportInters = 12438	SupportDualTot = 11341	SupportDualInters = 11341
+<(SupplyDepot+ )(Barracks+ )>	Balance = 0.523058	SupportTot = 12431	SupportInters = 12431	SupportDualTot = 11335	SupportDualInters = 11335
+<(SupplyDepot+ )>	Balance = 0.522984	SupportTot = 12458	SupportInters = 12458	SupportDualTot = 11363	SupportDualInters = 11363
+<(SupplyDepot+ )(Hatchery- )>	Balance = 0.522967	SupportTot = 12262	SupportInters = 12262	SupportDualTot = 11185	SupportDualInters = 11185
+<(Barracks+ )(Hatchery- )>	Balance = 0.522862	SupportTot = 11984	SupportInters = 11984	SupportDualTot = 10936	SupportDualInters = 10936
+<(SupplyDepot+ )(Barracks+ )(Hatchery- )>	Balance = 0.522793	SupportTot = 11973	SupportInters = 11973	SupportDualTot = 10929	SupportDualInters = 10929
+<(Barracks+ )(SupplyDepot+ )>	Balance = 0.522708	SupportTot = 12315	SupportInters = 12315	SupportDualTot = 11245	SupportDualInters = 11245
+<(SupplyDepot+ )(SpawningPool- )>	Balance = 0.522694	SupportTot = 12322	SupportInters = 12322	SupportDualTot = 11252	SupportDualInters = 11252
+<(SupplyDepot+ )(Barracks+ )(SupplyDepot+ )>	Balance = 0.522659	SupportTot = 12306	SupportInters = 12306	SupportDualTot = 11239	SupportDualInters = 11239
+<(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.522615	SupportTot = 12317	SupportInters = 12317	SupportDualTot = 11251	SupportDualInters = 11251
+<(SupplyDepot+ )(Hatchery- )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.522240	SupportTot = 11788	SupportInters = 11788	SupportDualTot = 10784	SupportDualInters = 10784
+<(Barracks+ )(SpawningPool- )>	Balance = 0.522170	SupportTot = 10811	SupportInters = 10811	SupportDualTot = 9893	SupportDualInters = 9893
+<(SupplyDepot+ )(Barracks+ )(SpawningPool- )>	Balance = 0.522034	SupportTot = 10792	SupportInters = 10792	SupportDualTot = 9881	SupportDualInters = 9881
+<(Barracks+ )(Hatchery- )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.521737	SupportTot = 11293	SupportInters = 11293	SupportDualTot = 10352	SupportDualInters = 10352
+<(SupplyDepot+ )(SpawningPool- )(SupplyDepot+ )>	Balance = 0.521639	SupportTot = 12174	SupportInters = 12174	SupportDualTot = 11164	SupportDualInters = 11164
+<(SupplyDepot+ )(Barracks+ )(Hatchery- )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.521566	SupportTot = 11282	SupportInters = 11282	SupportDualTot = 10349	SupportDualInters = 10349
+<(Barracks+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.521403	SupportTot = 12022	SupportInters = 12022	SupportDualTot = 11035	SupportDualInters = 11035
+<(SupplyDepot+ )(Barracks+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.521333	SupportTot = 12011	SupportInters = 12011	SupportDualTot = 11028	SupportDualInters = 11028
+<(SupplyDepot+ )(Barracks+ )(Factory+ )(SupplyDepot+ )>	Balance = 0.521293	SupportTot = 10674	SupportInters = 10674	SupportDualTot = 9802	SupportDualInters = 9802
+<(SupplyDepot+ )(Factory+ )(SupplyDepot+ )>	Balance = 0.521281	SupportTot = 10680	SupportInters = 10680	SupportDualTot = 9808	SupportDualInters = 9808
+<(Barracks+ )(Factory+ )(SupplyDepot+ )>	Balance = 0.521255	SupportTot = 10680	SupportInters = 10680	SupportDualTot = 9809	SupportDualInters = 9809
+<(Factory+ )(SupplyDepot+ )>	Balance = 0.521255	SupportTot = 10680	SupportInters = 10680	SupportDualTot = 9809	SupportDualInters = 9809
+<(SupplyDepot+ )(SpawningPool- )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.521175	SupportTot = 11839	SupportInters = 11839	SupportDualTot = 10877	SupportDualInters = 10877
+<(SupplyDepot+ )(SupplyDepot+ )(SupplyDepot+ )>	Balance = 0.521113	SupportTot = 12020	SupportInters = 12020	SupportDualTot = 11046	SupportDualInters = 11046
+<(Barracks+ )(SpawningPool- )(SupplyDepot+ )>	Balance = 0.520498	SupportTot = 10665	SupportInters = 10665	SupportDualTot = 9825	SupportDualInters = 9825
+<(Barracks+ )(CommandCenter+ )>	Balance = 0.520341	SupportTot = 11051	SupportInters = 11051	SupportDualTot = 10187	SupportDualInters = 10187
+<(SupplyDepot+ )(Barracks+ )(SpawningPool- )(SupplyDepot+ )>	Balance = 0.520332	SupportTot = 10646	SupportInters = 10646	SupportDualTot = 9814	SupportDualInters = 9814
+<(SupplyDepot+ )(Barracks+ )(CommandCenter+ )>	Balance = 0.520211	SupportTot = 11042	SupportInters = 11042	SupportDualTot = 10184	SupportDualInters = 10184
+<(SupplyDepot+ )(SpawningPool- )(CommandCenter+ )>	Balance = 0.520136	SupportTot = 11004	SupportInters = 11004	SupportDualTot = 10152	SupportDualInters = 10152
+<(SupplyDepot+ )(CommandCenter+ )(SupplyDepot+ )>	Balance = 0.520079	SupportTot = 10827	SupportInters = 10827	SupportDualTot = 9991	SupportDualInters = 9991
+<(CommandCenter+ )(SupplyDepot+ )>	Balance = 0.520079	SupportTot = 10827	SupportInters = 10827	SupportDualTot = 9991	SupportDualInters = 9991
+<(SupplyDepot+ )(CommandCenter+ )>	Balance = 0.518885	SupportTot = 11375	SupportInters = 11375	SupportDualTot = 10547	SupportDualInters = 10547
+<(CommandCenter+ )>	Balance = 0.518885	SupportTot = 11375	SupportInters = 11375	SupportDualTot = 10547	SupportDualInters = 10547
+<(SupplyDepot+ )(Barracks+ )(Factory+ )>	Balance = 0.518699	SupportTot = 11207	SupportInters = 11207	SupportDualTot = 10399	SupportDualInters = 10399
+<(SupplyDepot+ )(Factory+ )>	Balance = 0.518664	SupportTot = 11213	SupportInters = 11213	SupportDualTot = 10406	SupportDualInters = 10406
+<(Barracks+ )(Factory+ )>	Balance = 0.518640	SupportTot = 11213	SupportInters = 11213	SupportDualTot = 10407	SupportDualInters = 10407
+<(Factory+ )>	Balance = 0.518640	SupportTot = 11213	SupportInters = 11213	SupportDualTot = 10407	SupportDualInters = 10407
+<(SupplyDepot+ )(SpawningPool- )(Factory+ )>	Balance = 0.518503	SupportTot = 11083	SupportInters = 11083	SupportDualTot = 10292	SupportDualInters = 10292
+<(SupplyDepot+ )(Hatchery- )(CommandCenter+ )>	Balance = 0.518388	SupportTot = 10727	SupportInters = 10727	SupportDualTot = 9966	SupportDualInters = 9966
+<(SupplyDepot+ )(Hatchery- )(Factory+ )>	Balance = 0.516847	SupportTot = 10722	SupportInters = 10722	SupportDualTot = 10023	SupportDualInters = 10023
+<(Hatchery+ )(Factory- )>	Balance = 0.483202	SupportTot = 10025	SupportInters = 10025	SupportDualTot = 10722	SupportDualInters = 10722
+<(Hatchery+ )(CommandCenter- )>	Balance = 0.481662	SupportTot = 9968	SupportInters = 9968	SupportDualTot = 10727	SupportDualInters = 10727
+<(SpawningPool+ )(Factory- )>	Balance = 0.481416	SupportTot = 10310	SupportInters = 10310	SupportDualTot = 11106	SupportDualInters = 11106
+<(SpawningPool+ )(CommandCenter- )>	Balance = 0.480002	SupportTot = 10177	SupportInters = 10177	SupportDualTot = 11025	SupportDualInters = 11025
+<(SpawningPool+ )(SupplyDepot- )(SupplyDepot- )>	Balance = 0.478734	SupportTot = 10907	SupportInters = 10907	SupportDualTot = 11876	SupportDualInters = 11876
+<(SpawningPool+ )(SupplyDepot- )>	Balance = 0.478220	SupportTot = 11209	SupportInters = 11209	SupportDualTot = 12230	SupportDualInters = 12230
+<(Hatchery+ )(SupplyDepot- )(SupplyDepot- )>	Balance = 0.477853	SupportTot = 10788	SupportInters = 10788	SupportDualTot = 11788	SupportDualInters = 11788
+<(Hatchery+ )>	Balance = 0.477365	SupportTot = 11209	SupportInters = 11209	SupportDualTot = 12272	SupportDualInters = 12272
+<(SpawningPool+ )>	Balance = 0.477212	SupportTot = 11350	SupportInters = 11350	SupportDualTot = 12434	SupportDualInters = 12434
+<(Hatchery+ )(SupplyDepot- )>	Balance = 0.476930	SupportTot = 11060	SupportInters = 11060	SupportDualTot = 12130	SupportDualInters = 12130
+<(Hatchery+ )(SupplyDepot- )(SupplyDepot- )(SupplyDepot- )>	Balance = 0.476692	SupportTot = 10185	SupportInters = 10185	SupportDualTot = 11181	SupportDualInters = 11181
+<(SpawningPool+ )(SupplyDepot- )(SupplyDepot- )(SupplyDepot- )>	Balance = 0.473825	SupportTot = 10119	SupportInters = 10119	SupportDualTot = 11237	SupportDualInters = 11237
+Total # of TreeNode	60
+Total # of TreeNode displayed	60
+Closed/Max	5	4
+Closed/Max	4	11
+Maximum memory usage	3.704487MB
+Closed/Max	3	20
+Closed/Max	2	19
+Total of large items	159
+# of projected datasets	144
+Closed/Max	1	6
+Total running time after sort, and output (second)	0.614
+Total running time (seconds)	0.613
+
+
+
+
+
+
+
+
+
