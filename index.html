@@ -39,11 +39,11 @@
 
 <p><strong>Problem statement.</strong> We consider an interaction of two players as a sequence of actions made by these players where exactly one player wins, typically a zeso-sum game. The objectives developped in the paper is to extract strategical patterns from traces of players' interaction and to exhibit their characteristics, such as weaknesses or strenghts. Thus, we compute a measure, called the balance, of a strategical pattern to know if it is more likely to win or to lose. Below, an example of a database built from an interaction between two players.</p>
 
-<p><img src="http://liris.cnrs.fr/mehdi.kaytoue/balancespan/balancespan/database.svg" alt=""></p>
+<p><img src="http://liris.cnrs.fr/%7Egbosc/svg/database.svg" alt=""></p>
 
 <p><strong>Frequent sequential pattern mining.</strong> Given a database of individuals or objects, each one provided with a description (set of items, sequences, graphes, vectors...), frequent pattern mining consists in finding the description abstractions that appear in more than <code>n</code> objects of the database. When we are facing database of sequences, one accordingly looks for subsequences shared by at least some amount of the individuals, as examplified below. The subsequence <code>&lt;(a)(b,c)&gt;</code> appears 3 times out of four: if the minimum support is set to 10%, then this pattern is frequent.</p>
 
-<p><img src="http://s14.postimg.org/yis24isgh/sequence_database_v2.png" alt=""></p>
+<p><img src="http://liris.cnrs.fr/%7Egbosc/svg/sequence_database_v2.svg" alt=""></p>
 
 <p><strong>Emmerging patterns.</strong> Let us consider that each sequence of the database is associated to a unique class label (a positive label + and a negative label -). The growth-rate characterizes the discriminating power of a pattern for one class w.r.t. the other. The growth-rate of the pattern <code>&lt;(a)(b,c)&gt;</code> related to the positive class label equals 2, that means <code>&lt;(a)(b,c)&gt;</code> is two times more present in class + than in class -.</p>
 
@@ -58,7 +58,7 @@
 
 <p><strong>The trick.</strong> Since the computing of the <em>balance</em> lies on the support of the pattern and its dual, we put up an new approach during the pattern growth approach of the algorithm that consists in performing <strong>a double projected database</strong> which contains both the pattern and its dual. Thus, the <em>balance</em> could be computed on the fly, without requiring a huge post-processing. Thanks to this method, the computing of the balance becomes really faster.</p>
 
-<p><img src="http://s12.postimg.org/hc3wxtmjx/algo.png" alt="test"></p>
+<p><img src="http://liris.cnrs.fr/%7Egbosc/svg/algo.svg" alt="test"></p>
 
 <h2>
 <a id="starcraft-ii-in-the-e-sport-scene" class="anchor" href="#starcraft-ii-in-the-e-sport-scene" aria-hidden="true"><span class="octicon octicon-link"></span></a>StarCraft II in the E-Sport Scene</h2>
@@ -76,7 +76,9 @@
 
 <p><strong>Qualitative aspects.</strong> The distribution of the balance related to the support of the patterns shows that the game in its current state is globally balanced: the more frequent a strategical pattern is, the more balanced it is (balance equals to 0.5). For example, among 290 patterns output in the results of the dataset that gathers the games between Zerg versus Zerg, the pattern &lt;(SpawPool+)(SpawnPool-)(SpiCrawler+)(RoachWarren+)(Spire-)&gt; denotes games where one of the player go to air units and the second to ground units, two different known openings, with balance 0.47 and support 68.</p>
 
-<p><img src="http://s15.postimg.org/l4exl2z23/Untitled_4.png" alt=""></p>
+<p><img src="http://liris.cnrs.fr/%7Egbosc/svg/data_v2.svg" alt="">
+<img src="http://liris.cnrs.fr/%7Egbosc/svg/Temps_Exec_TvZ.png" alt="">
+<img src="http://liris.cnrs.fr/%7Egbosc/svg/Balance_ZvZ_color.png" alt=""></p>
       </section>
     </div>
 
