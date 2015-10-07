@@ -14,6 +14,7 @@ To run *BalanceSpan*, you need to download the projet from this GitHub repositor
 - The "data" and "data-nointer" folders contain the datasets used in our experiments. The files "sequences-XX-WW.txt.bin" are the binary version of the files "sequences-XX-WW.txt", where "XX" is related to the type of match-up (e.g. XX = PP for games oppsing Protoss to Protoss), and "WW" is duration of the window for the sequence we used (if WW = 30, it means that buildings created during the first 30 seconces of the game are included in the first itemset of the sequence, buildings created between the 31th and the 1st minute are included in the second itemset of the sequence, and so on). The files "dico-XX-WW.txt" correspond to the dictionnary required in the experiments.
 - The "script" folder contains an example of the command to launch a run.
 - The "results" folder contains the result of the above script.
+- The "binarize" folder contains the source to binarize the input data required by *BalanceSpan*.
 
 ## BalanceSpan Workflow
 This part details the process to run *BalanceSpan*.
@@ -39,5 +40,6 @@ Note that your data file has to be encoded in a certain way:
 4. **Get the results.** Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors. 
 
 For any questions/remarks, contact Guillaume BOSC: guillaume.bosc@insa-lyon.fr
+[![DOI](https://zenodo.org/badge/18678/guillaume-bosc/BalanceSpan.svg)](https://zenodo.org/badge/latestdoi/18678/guillaume-bosc/BalanceSpan)
 
 
