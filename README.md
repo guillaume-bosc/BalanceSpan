@@ -28,7 +28,8 @@ Note that your data file has to be encoded in a certain way:
   - each sequence is written on a single line
   - each itemset of the sequence ends by -1
   - each sequence ends by -2
-  - each item is a number between 0 and the number of different items minus 1
+  - each original item is represented as a unique number between 0 and the number of different items minus 1
+  - each original item labelled as + is represented by a even number (e.g., i) and its dual item (labelled as -) is represented by the odd number i+1.
 
 3. **Run *BalanceSpan*.** Once you've compiled *BalanceSpan* and your data is binarized, you are ready to run it on this data. To do that, you can have a look at the script we provide as an example in the folder "script". *BalanceSpan* requires several parameters to be launched. The prototype of the command line is as follows: `./BalanceSpan <filename> <support> <itemcount> <dictionnary_file>`. Here, we explain these parameters:
   - `<filename>` is the path to the data binarized file.
