@@ -29,7 +29,7 @@ Note that your data file has to be encoded in a certain way:
   - each itemset of the sequence ends by -1
   - each sequence ends by -2
   - each original item is represented as a unique number between 0 and the number of different items minus 1
-  - each original item labelled as + is represented by a even number (e.g., i) and its dual item (labelled as -) is represented by the odd number i+1.
+  - each original item labelled as + is represented by a even number (e.g., `i`) and its dual item (labelled as -) is represented by the odd number `i+1`. For example, the sequence `<(SupplyDepot-)(Barracks+)(Barracks-, CommandCenter+)>` is represented by the line `3 -1 0 -1 1 4 -1 -2` where `SupplyDepot-` is represented by `3` (`SupplyDepot+` is `2`), `Barracks+` is `0 `, (so `Barracks-` is `1`) and `CommandCenter+` is `4`.
 
 3. **Run *BalanceSpan*.** Once you've compiled *BalanceSpan* and your data is binarized, you are ready to run it on this data. To do that, you can have a look at the script we provide as an example in the folder "script". *BalanceSpan* requires several parameters to be launched. The prototype of the command line is as follows: `./BalanceSpan <filename> <support> <itemcount> <dictionnary_file>`. Here, we explain these parameters:
   - `<filename>` is the path to the data binarized file.
@@ -41,8 +41,8 @@ Note that your data file has to be encoded in a certain way:
 4. **Get the results.** Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors. 
 
 ## References
-- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-Francois Boulicaut, and Philip Tan. Mining Balanced Patterns in Real-Time Strategy Games. In Torsten Schaub, editor, 21st Europen Conference on Artificial Intelligence, pages 975–976, 2014. (Short papier).
-- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-François Boulicaut, and Philip Tan. A Pattern Mining Approach to Study Strategy Balance in RTS Games. Submitted to IEEE Transactions on Computational Intelligence and AI in Games, 2015.
+- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-Francois Boulicaut, and Philip Tan. Mining Balanced Patterns in Real-Time Strategy Games. In Torsten Schaub, editor, 21st Europen Conference on Artificial Intelligence, pages 975–976, 2014. (Short papier).
+- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-François Boulicaut, and Philip Tan. A Pattern Mining Approach to Study Strategy Balance in RTS Games. Submitted to IEEE Transactions on Computational Intelligence and AI in Games, 2015.
 
 For any questions/remarks, contact Guillaume BOSC: guillaume.bosc@insa-lyon.fr
 
