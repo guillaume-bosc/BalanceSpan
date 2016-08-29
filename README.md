@@ -1,4 +1,4 @@
-# BalanceSpan ReadMe
+# BalanceSpan ReadMe [![Build Status](https://travis-ci.org/guillaume-bosc/BalanceSpan.svg?branch=master)](https://travis-ci.org/guillaume-bosc/BalanceSpan)
 
 ## Introduction
 *BalanceSpan* is an algorithm designed to extract frequent patterns (strategies) from StarCraft II replays. Since it is generic, *BalanceSpan* could be applied to many other datasets. It computes a measure that evaluates the balance of a strategy, *i.e.*, if the strategy is likely to win or to lose. BalanceSpan allows the user to identify some imbalanced strategies.
