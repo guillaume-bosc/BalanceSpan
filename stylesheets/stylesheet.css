@@ -26,7 +26,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
+  /*vertical-align: baseline;*/
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -310,6 +310,22 @@ Full-Width Styles
 #project_tagline {
   color: #fff;
   font-size: 24px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#project_authors {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#project_affil {
+  color: #fff;
+  font-size: 16px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
