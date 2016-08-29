@@ -1,0 +1,10 @@
+language: cpp
+compiler:
+  - gcc
+  - clang
+
+script: 
+  - cd algo/BalanceSpan_Linux && make
+  - cd - && cd tests/script && ./execTvZ.sh
+  - ./test-diff.sh
+
