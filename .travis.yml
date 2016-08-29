@@ -8,3 +8,8 @@ script:
   - cd - && cd tests/script && ./execTvZ.sh
   - ./test-diff.sh
 
+addons:
+  apt:
+    packages:
+    - g++-multilib
+
