@@ -41,8 +41,8 @@ Note that your data file has to be encoded in a certain way:
 4. **Get the results.** Once the execution is over, two files are generated: `result.txt` and `error.tmp`. `result.txt` contains the result of the run of *BalanceSpan*, and `error.tmp` contains a log file if you encountered some errors. 
 
 ## References
-- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-Francois Boulicaut, and Philip Tan. Mining Balanced Patterns in Real-Time Strategy Games. In Torsten Schaub, editor, 21st European Conference on Artificial Intelligence, pages 975–976, 2014. (Short paper).
-- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-François Boulicaut, and Philip Tan. A Pattern Mining Approach to Study Strategy Balance in RTS Games. Submitted to IEEE Transactions on Computational Intelligence and AI in Games, 2015.
+- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-Francois Boulicaut, and Philip Tan. Mining Balanced Patterns in Real-Time Strategy Games. In Torsten Schaub, editor, 21st European Conference on Artificial Intelligence, pages 975–976, 2014. (Short paper). Online version: https://hal.archives-ouvertes.fr/hal-01100933v1
+- Guillaume Bosc, Mehdi Kaytoue, Chedy Raïssi, Jean-François Boulicaut, and Philip Tan. A Pattern Mining Approach to Study Strategy Balance in RTS Games. In IEEE Transactions on Computational Intelligence and AI in Games, 2015. Online version: https://hal.archives-ouvertes.fr/hal-01252728v1
 
 For any questions/remarks, contact Guillaume BOSC: guillaume.bosc@insa-lyon.fr
 
