@@ -6,6 +6,7 @@
 #include <sys/timeb.h>
 #include <string.h>
 #include <iostream>
+#include <stdint.h>
 
 #include "ProjDB.h"
 #include "Global.h"
@@ -138,7 +139,7 @@ struct PROJ_DB* make_projdb_from_org_dataset(const double dSupport,
 			if (inter[i].count >= gSUP) {
 
 				proj_db[nCount].m_nPatLen = 1;
-				proj_db[nCount].m_pnPat = (int*) i;
+				proj_db[nCount].m_pnPat = (int*)(uintptr_t) i;
 
 				proj_db[nCount].m_nMaxSup = (*(inter + i)).count;
 
@@ -220,14 +221,14 @@ struct PROJ_DB* make_projdb_from_org_dataset(const double dSupport,
 						tempDB->status = ORIGINAL;
 					}
 
-					for (d = dataset + 1, buf_idx[0] = int(d), j = 1;
+					for (d = dataset + 1, buf_idx[0] = (int)(uintptr_t)d, j = 1;
 							d[2] != -2; d++) {
 						if (*d == *dataset && d[1] != -1)
-							buf_idx[j++] = int(d + 1);
+							buf_idx[j++] = (int)(uintptr_t)(d + 1);
 					}
 					tempSeq->m_nProjCount = j;
 					if (j == 1) {
-						tempSeq->m_ppSeq = (int**) buf_idx[0];
+						tempSeq->m_ppSeq = (int**)(uintptr_t)buf_idx[0];
 					} else {
 						n_total_mem += (nSize = sizeof(int*) * j);
 						tempSeq->m_ppSeq = (int**) memalloc(nSize);
@@ -325,7 +326,7 @@ struct PROJ_DB* make_projdb_from_projected_db(const struct PROJ_DB* pDB,
 				proj_db[nCount].m_nPatLen = (pDB->m_nPatLen + 1);
 				proj_db[nCount].m_pnPat = (int*) memalloc(j);
 				if (pDB->m_nPatLen == 1) {
-					proj_db[nCount].m_pnPat[0] = (int) pDB->m_pnPat;
+					proj_db[nCount].m_pnPat[0] = (int)(uintptr_t)pDB->m_pnPat;
 				} else {
 					memcpy(proj_db[nCount].m_pnPat, pDB->m_pnPat,
 							j - sizeof(int));
@@ -363,7 +364,7 @@ struct PROJ_DB* make_projdb_from_projected_db(const struct PROJ_DB* pDB,
 				proj_db[nCount].m_nPatLen = (pDB->m_nPatLen + 2);
 				proj_db[nCount].m_pnPat = (int*) memalloc(sizeof(int) + j);
 				if (pDB->m_nPatLen == 1) {
-					proj_db[nCount].m_pnPat[0] = (int) pDB->m_pnPat;
+					proj_db[nCount].m_pnPat[0] = (int)(uintptr_t)pDB->m_pnPat;
 				} else {
 					memcpy(proj_db[nCount].m_pnPat, pDB->m_pnPat,
 							j - sizeof(int));
@@ -435,7 +436,7 @@ struct PROJ_DB* make_projdb_from_projected_db(const struct PROJ_DB* pDB,
 
 					(*tempDB).NumOfItems += (lastAddr - dataset);
 
-					for (buf_idx[0] = int(dataset + 1), l = 1, j = i;
+					for (buf_idx[0] = (int)(uintptr_t)(dataset + 1), l = 1, j = i;
 							j < nProjCnt; j++) {
 						if (j == i)
 							d = dataset + 1;
@@ -444,12 +445,12 @@ struct PROJ_DB* make_projdb_from_projected_db(const struct PROJ_DB* pDB,
 						while (*d != -1 && d[2] != -2 && *d != *dataset)
 							d++;
 						if (d[2] != -2 && *d == *dataset && d[1] != -1)
-							buf_idx[l++] = int(d + 1);
+							buf_idx[l++] = (int)(uintptr_t)(d + 1);
 					}
 					tempDB->m_nSup++;
 					tempSeq->m_nProjCount = l;
 					if (l == 1) {
-						tempSeq->m_ppSeq = (int**) buf_idx[0];
+						tempSeq->m_ppSeq = (int**) (uintptr_t)buf_idx[0];
 					} else {
 						n_total_mem += (nSize = sizeof(int*) * l);
 						tempSeq->m_ppSeq = (int**) memalloc(nSize);
@@ -490,15 +491,15 @@ struct PROJ_DB* make_projdb_from_projected_db(const struct PROJ_DB* pDB,
 
 						(*tempDB).NumOfItems += (lastAddr - dataset);
 
-						for (d = dataset + 1, buf_idx[0] = int(d), l = 1;
+						for (d = dataset + 1, buf_idx[0] = (int)(uintptr_t)d, l = 1;
 								d[2] != -2; d++) {
 							if (*d == *dataset && d[1] != -1)
-								buf_idx[l++] = int(d + 1);
+								buf_idx[l++] = (int)(uintptr_t)(d + 1);
 						}
 						tempDB->m_nSup++;
 						tempSeq->m_nProjCount = l;
 						if (l == 1) {
-							tempSeq->m_ppSeq = (int**) buf_idx[0];
+							tempSeq->m_ppSeq = (int**) (uintptr_t)buf_idx[0];
 						} else {
 							n_total_mem += (nSize = sizeof(int*) * l);
 							tempSeq->m_ppSeq = (int**) memalloc(nSize);
@@ -569,7 +570,7 @@ void PrintProjDBs(const struct PROJ_DB *proj_db, const int nCount) {
 	for (i = 0; i < nCount; i++) {
 		printf("Proj. DB. for (");
 		if (proj_db[i].m_nPatLen == 1)
-			printf("%d", int(proj_db[i].m_pnPat));
+			printf("%d", (int)(uintptr_t)(proj_db[i].m_pnPat));
 		else
 			for (j = 0; j < proj_db[i].m_nPatLen; j++) {
 				if (proj_db[i].m_pnPat[j] == -1)
