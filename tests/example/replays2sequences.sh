@@ -1,5 +1,5 @@
 #!/bin/bash
-############
+#############
 
 # Generates data
 python sc2replay_converter.py ../../replays/ 600 30 > data.csv
