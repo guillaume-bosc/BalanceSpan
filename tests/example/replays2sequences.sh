@@ -16,9 +16,9 @@ cd  ../../algo/BalanceSpan_Mac/
 make
 cd ../../tests/example
 
-nbItems=`cat dico.txt | wc -l`
+nbItemsMax=`cat dico.txt | wc -l`
 #run the algo
-../../algo/BalanceSpan PT.log.bin 0.5 $nbItems dico.txt
+../../algo/BalanceSpan PT.log.bin 0.1 $nbItemsMax dico.txt
 
 #see the result
 sort -t$'\t' -k 2,2 -r -s result.txt

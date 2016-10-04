@@ -5,10 +5,11 @@ import argparse, sys, sc2reader
 from sc2reader.events.game import *
 from sc2reader.events.message import *
 from sc2reader.events.tracker import *
+import collections
 
 
 def main(files, maxSecondsToConsider, windowCutInSeconds):
-    actions_dic = {}  # id: action
+    actions_dic = collections.OrderedDict()  # id: action
     next_global_d = 1 # start to count action id at 1
 
     for filename in sc2reader.utils.get_files(files):
@@ -29,18 +30,25 @@ def main(files, maxSecondsToConsider, windowCutInSeconds):
             if (event.second > maxSecondsToConsider): break
             if (isinstance(event, TargetPointCommandEvent) and event.has_ability):
                 if (event.ability_name.startswith("Build")):
-                    action=event.ability_name
-                    if event.player.result[:1]=="W": action = action + "+"
-                    else: action= action + "-"
-                    if (action not in actions_dic):
-                        actions_dic[action] = next_global_d
+
+                    actionpos  = event.ability_name + "+"
+                    actionneg  = event.ability_name + "-"
+                    actiondone = actionpos if event.player.result[:1]=="W" else actionneg
+
+                    if actionpos not in actions_dic:
+                        actions_dic[actionneg] = next_global_d
                         next_global_d = next_global_d + 1
-                    print(actions_dic[action], end = " ")
+                        actions_dic[actionpos] = next_global_d
+                        next_global_d = next_global_d + 1
+                    
+                    print(actions_dic[actiondone], end = " ")
+
                     hasChangedItemset = False
                     if (event.second - sec > windowCutInSeconds):
                         sec = event.second
                         print("-1", end=" ")
                         hasChangedItemset=True
+                        
         if (not hasChangedItemset): print ("-1", end=" ")
         print("\t".join([str(s) for s in ["-2"]+replay_info]))
 
